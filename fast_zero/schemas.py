@@ -23,3 +23,8 @@ class UserDB(UserSchema):
 
 class UserList(BaseModel):
     users: list[UserPublic]
+
+
+# Retorna um usuário específico do banco de dados.
+class UserSpecific(BaseModel):
+    user: UserPublic
